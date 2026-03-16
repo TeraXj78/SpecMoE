@@ -9,3 +9,6 @@ datasets/
 logs/
 wandb/
 .ipynb_checkpoints/
+*.py[cod]
+*.pyo
+*.pyd
