@@ -1,0 +1,35 @@
+{
+    "optimizer": {
+        "type": "Adam",
+        "args":{
+            "lr": 0.001,
+            "weight_decay": 0,
+            "amsgrad": true
+        }
+    },
+
+    "scheduler":{
+        "type":"ReduceLROnPlateau",
+        "args":{
+            "mode":"min",
+            "factor":0.5,
+            "patience":10
+        }
+    },
+
+    
+    "save_dir": "/lustre/fswork/projects/rech/jhu/uav28dl/saved/",
+   
+
+    "trainer": { 
+        "loss": "weighted_CrossEntropyLoss",
+        "epochs":100,
+        "unfreeze_epoch":10,
+        "lr_experts":0.001,
+        "lambda_energy_loss":0.01,
+        "accumulation_steps":1,
+        "save_period": 5,
+        "verbosity": 2,
+        "monitor": "min val_loss"
+    }
+}
