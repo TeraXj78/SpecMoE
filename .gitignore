@@ -1,8 +1,6 @@
 __pycache__/
 *.slurm
 *.pyc
-*.pt
-*.pth
 *.ckpt
 data/
 datasets/
