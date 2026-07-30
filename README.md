@@ -1,5 +1,6 @@
 # SpecMoE
-This repository contains the implementation of SpecMoE.
+This repository contains the implementation of SpecMoE. 
+Paper link: https://arxiv.org/abs/2603.16739
 
 ## Abstract
 Decoding the orchestration of neural activity in electroencephalography (EEG) signals is a central challenge in bridging neuroscience with artificial intelligence. Foundation models have made strides in generalized EEG decoding, yet many existing frameworks primarily relying on separate temporal and spectral masking of raw signals during self-supervised pretraining. Such strategies often tend to bias learning toward high-frequency oscillations, as low-frequency rhythmic patterns can be easily inferred from the unmasked signal.
